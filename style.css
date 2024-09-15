@@ -1,0 +1,57 @@
+#calcuator{
+    margin: 0 auto
+    ;
+position:relative 
+;
+
+height: 695px;
+width: 685px;
+}
+#calcuator:hover{
+    transition: 0.7s;
+    box-shadow: 0 0 40px rgb(29, 4, 255);
+
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+#display{
+    transition:0.9s ;
+    width: 675px;
+    height: 135px;
+    background-color: gray;
+    color: white;
+    font-size: 3.9rem;
+}
+
+button{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.9rem;
+    height: 115px;
+    width: 168px;
+}
+.cal{
+    background-color: orange;
+}
+button:hover{
+    transition: 0.2s;
+    background-color: rgb(86, 82, 82);
+}
+.cal:hover{
+    transition: 0.2s;
+    background-color: rgb(255, 201, 101);
+}
+
+button:active{
+    transition: 0.2s;
+    background-color: rgb(65, 51, 51);
+}
+.cal:active{
+    transition: 0.2s;
+    background-color: rgb(215, 156, 44);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <div id="calcuator">
+        
+        <input type="text" id="display" readonly>
+          <div id="key">
+<button onclick="appendtoDisplay('7')">7</button>
+<button onclick="appendtoDisplay('8')">8</button>
+<button onclick="appendtoDisplay('9')">9</button>
+<button class="cal" onclick="appendtoDisplay('+')">+</button>
+<br>
+<button onclick="appendtoDisplay('4')">4</button>
+<button onclick="appendtoDisplay('5')">5</button>
+<button onclick="appendtoDisplay('6')">6</button>
+<button class="cal" onclick="appendtoDisplay('-')">-</button>
+<br>
+<button onclick="appendtoDisplay('1')">1</button>
+<button onclick="appendtoDisplay('2')">2</button>
+<button onclick="appendtoDisplay('3')">3</button>
+<button class="cal" onclick="appendtoDisplay('*')">*</button>
+<br>
+<button onclick="appendtoDisplay('0')">0</button>
+<button onclick="appendtoDisplay('/')">/</button>
+<button onclick="clearDisplay()">C</button>
+<button class="cal" onclick="multipy()">=</button><br>
+
+<button onclick="appendtoDisplay('.')">.</button>
+<button onclick="appendtoDisplay('00')">00</button>
+<button onclick="appendtoDisplay('%')">%</button>
+<button class="cal" onclick="display.value =display.value.toString().slice(0, -1)">←</button>
+
+
+          </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
