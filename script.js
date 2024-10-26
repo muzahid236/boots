@@ -1,22 +1,21 @@
-//Calculator proggram
+// CALCULATOR PROGRAM
 
-let display = document.querySelector('#display');
+const display = document.getElementById('display');
 
-function appendtoDisplay(input){
-display.value += input;
+function appendToDisplay(input){
+     display.value += input;
 }
 
-function clearDisplay(){
- display.value = "";
+function clearDiplay(){
+    display.value = "";
 }
 
-function multipy(){
-    try{
-        display.value =eval(display.value);
-    }
-    catch(Error){
-   display.value ="Error";
-    }
-
-    
+function calculate(){
+     try{
+         display.value = eval(display.value);
+     }
+     catch(error){
+        display.value = "Error";
+     }
+     
 }
