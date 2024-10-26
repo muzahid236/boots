@@ -1,57 +1,84 @@
-#calcuator{
-    margin: 0 auto
-    ;
-position:relative 
-;
-
-height: 695px;
-width: 685px;
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0,0%,95%);
 }
-#calcuator:hover{
-    transition: 0.7s;
-    box-shadow: 0 0 40px rgb(29, 4, 255);
-
-}
-
-h1{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 35px;
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0,0%,15%);
+    border-radius: 15px;
+    max-width: 514px;
+    overflow: hidden;
 }
 #display{
-    transition:0.9s ;
-    width: 675px;
-    height: 135px;
-    background-color: gray;
+    width: 100%;
+    padding: 20px;
+    font-size: 4.5rem;
+    text-align: left;
+    border: none;
+    background-color:hsl(0,0%,20%) ;
     color: white;
-    font-size: 3.9rem;
 }
-
+#keys{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 9px;
+padding: 25px;
+}
 button{
-    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0,0%,30%);
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3.9rem;
-    height: 115px;
-    width: 168px;
-}
-.cal{
-    background-color: orange;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 button:hover{
-    transition: 0.2s;
-    background-color: rgb(86, 82, 82);
-}
-.cal:hover{
-    transition: 0.2s;
-    background-color: rgb(255, 201, 101);
+    background-color:hsl(0,0%,40%) ;
 }
 
 button:active{
-    transition: 0.2s;
-    background-color: rgb(65, 51, 51);
+    background-color:hsl(0,0%,50%) ;
 }
-.cal:active{
-    transition: 0.2s;
-    background-color: rgb(215, 156, 44);
+
+.operator{
+    background-color: hsl(35,100%,55%);
+}
+
+.operator:hover{
+    background-color: hsl(35,100%,65%);
+}
+
+.operator:active{
+    background-color: hsl(35,100%,75%);
+}
+
+.operatore{
+    background-color: rgb(18, 241, 18);
+}
+
+.operatore:hover{
+    background-color:rgb(78, 244, 78);
+}
+
+.operatore:active{
+    background-color: rgb(116, 239, 116);
+}
+
+.clear{
+    background-color:rgb(254, 27, 27) ;
+}
+
+.clear:hover{
+    background-color:rgb(252, 67, 67);
+}
+
+.clear:active{
+    background-color:rgb(248, 91, 91) ;
 }
