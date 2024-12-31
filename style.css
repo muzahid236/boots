@@ -1,84 +1,93 @@
-body{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0,0%,95%);
-}
-#calculator{
-    font-family: Arial, sans-serif;
-    background-color: hsl(0,0%,15%);
-    border-radius: 15px;
-    max-width: 514px;
-    overflow: hidden;
-}
-#display{
-    width: 100%;
-    padding: 20px;
-    font-size: 4.5rem;
-    text-align: left;
-    border: none;
-    background-color:hsl(0,0%,20%) ;
-    color: white;
-}
-#keys{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 9px;
-padding: 25px;
-}
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    background-color: hsl(0,0%,30%);
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-button:hover{
-    background-color:hsl(0,0%,40%) ;
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  min-height: 500px;
+  box-shadow: 0 0 30px pink;
+  max-width: 600px;
 }
 
-button:active{
-    background-color:hsl(0,0%,50%) ;
+#display {
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  max-width: 584px;
+  height: 100px;
+  font-size: 3.1rem;
+  color: white;
+}
+button {
+  height: 98px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  min-width: 124px;
+  border-radius: 35%;
+}
+#operator {
+  background-color: hsl(35, 100%, 55%);
 }
 
-.operator{
-    background-color: hsl(35,100%,55%);
+#operator:hover {
+  background-color: hsl(35, 100%, 65%);
 }
 
-.operator:hover{
-    background-color: hsl(35,100%,65%);
+#operator:active {
+  background-color: hsl(35, 100%, 75%);
 }
 
-.operator:active{
-    background-color: hsl(35,100%,75%);
+#c {
+  background-color: rgb(254, 27, 27);
 }
 
-.operatore{
-    background-color: rgb(18, 241, 18);
+#c:hover {
+  background-color: rgb(252, 67, 67);
 }
 
-.operatore:hover{
-    background-color:rgb(78, 244, 78);
+#c:active {
+  background-color: rgb(248, 91, 91);
+}
+#eval {
+  background-color: rgb(18, 241, 18);
 }
 
-.operatore:active{
-    background-color: rgb(116, 239, 116);
+#eval:hover {
+  background-color: rgb(78, 244, 78);
 }
 
-.clear{
-    background-color:rgb(254, 27, 27) ;
+#eval:active {
+  background-color: rgb(116, 239, 116);
+}
+::placeholder {
+  color: white;
+  font-size: 3.1rem;
+}
+button:hover {
+  background-color: hsl(0, 0%, 40%);
 }
 
-.clear:hover{
-    background-color:rgb(252, 67, 67);
+button:active {
+  background-color: hsl(0, 0%, 50%);
 }
-
-.clear:active{
-    background-color:rgb(248, 91, 91) ;
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    max-width: 550px;
+  }
+  button {
+    min-width: 100px;
+  }
+  #display {
+    max-width: 540px;
+  }
+}
+@media only screen and(min-width: 595px) {
+  button {
+    color: green;
+  }
 }
