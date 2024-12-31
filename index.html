@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-</head>
-<body>
-  <div id="calculator">
-     <input id="display" maxlength="13" readonly >
-     <div id="keys">
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-       <button class="operator" onclick="appendToDisplay('+')">+</button>
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-       <button class="operator" onclick="appendToDisplay('-')">-</button>
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-       <button class="operator" onclick="appendToDisplay('*')">*</button>
-       <button onclick="appendToDisplay('0')">0</button>
-       <button onclick="appendToDisplay('/')">/</button>
-       <button onclick="appendToDisplay('%')">%</button>
-        <button class="operator" onclick="display.value =display.value.toString().slice(0, -1)">←</button>
+  <head>
+    <link rel="shortcut icon" href="calculator.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="display">
+        <input
+          minlength="1"
+          maxlength="18"
+          readonly
+          type="text"
+          id="display"
+          placeholder="0"
+        />
+      </div>
+      <br />
+      <div class="keys">
+        <button onclick="appendtoDisplay('7')">7</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('8')">8</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('9')">9</button>&nbsp;&nbsp;
+        <button id="operator" onclick="appendtoDisplay('+')">&plus;</button>
+        <br /><br />
+        <button onclick="appendtoDisplay('4')">4</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('5')">5</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('6')">6</button>&nbsp;&nbsp;
+        <button id="operator" onclick="appendtoDisplay('-')">&minus;</button>
+        <br /><br />
+        <button onclick="appendtoDisplay('1')">1</button>&nbsp;&nbsp;
 
-        
-        <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="appendToDisplay('00')">00</button>
-        <button class="clear" onclick="clearDisplay('')">C</button>
-
-        
-        <button class="operatore" onclick="calculate()">=</button>
-       
-     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+        <button onclick="appendtoDisplay('2')">2</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('3')">3</button>&nbsp;&nbsp;
+        <button id="operator" onclick="appendtoDisplay('*')">X</button>
+        <br /><br />
+        <button onclick="appendtoDisplay('0')">0</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('%')">%</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('00')">00</button>&nbsp;&nbsp;
+        <button
+          id="operator"
+          onclick="display.value = display.value.toString().slice(0, -1)"
+        >
+          &larr;
+        </button>
+        <br /><br />
+        <button onclick="appendtoDisplay('.')">.</button>&nbsp;&nbsp;
+        <button onclick="appendtoDisplay('/')">&divide;</button>&nbsp;&nbsp;
+        <button id="c" onclick="clearDisplay('')">C</button>&nbsp;&nbsp;
+        <button id="eval" onclick="calculate('=')">=</button>
+        <br /><br />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
