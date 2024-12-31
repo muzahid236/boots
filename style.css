@@ -7,13 +7,13 @@
   border-radius: 15px;
   min-height: 500px;
   box-shadow: 0 0 30px pink;
-  max-width: 600px;
+  width: 600px;
 }
 
 #display {
   border: none;
   background-color: hsl(0, 0%, 20%);
-  max-width: 584px;
+  min-width: 584px;
   height: 100px;
   font-size: 3.1rem;
   color: white;
@@ -74,20 +74,4 @@ button:hover {
 
 button:active {
   background-color: hsl(0, 0%, 50%);
-}
-@media only screen and (max-width: 600px) {
-  .wrapper {
-    max-width: 550px;
-  }
-  button {
-    min-width: 100px;
-  }
-  #display {
-    max-width: 540px;
-  }
-}
-@media only screen and(min-width: 595px) {
-  button {
-    color: green;
-  }
 }
